@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name:  ubuntu-default
-  namespace: default
   labels:
     app:  ubuntu-default
 spec:
@@ -19,6 +18,7 @@ spec:
     metadata:
       labels:
         app:  ubuntu-default
+        deployment: default
     spec:
       # initContainers:
         # Init containers are exactly like regular containers, except:

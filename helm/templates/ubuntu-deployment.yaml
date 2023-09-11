@@ -18,6 +18,7 @@ spec:
     metadata:
       labels:
         app:  ubuntu
+        deployment: normal
     spec:
       # initContainers:
         # Init containers are exactly like regular containers, except:
