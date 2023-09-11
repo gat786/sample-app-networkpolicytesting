@@ -36,7 +36,7 @@ spec:
           cmd: ["/bin/bash", "-c"]
           args: 
             - |- 
-            uvicorn main:app --host 0.0.0.0 --port 80
+              uvicorn main:app --host 0.0.0.0 --port 80
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
