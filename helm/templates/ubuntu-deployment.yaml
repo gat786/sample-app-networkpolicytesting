@@ -28,7 +28,7 @@ spec:
       - name:  ubuntu
         image:  ubuntu:latest
         command: ["/bin/bash", "-c", "--"]
-        args: ["while true; do sleep 30; done;"]
+        args: ["while true; do echo 'Hello Bro' && sleep 30; done;"]
         resources:
           requests:
             cpu: 100m
