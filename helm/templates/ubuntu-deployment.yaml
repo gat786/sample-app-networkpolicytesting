@@ -27,6 +27,8 @@ spec:
       containers:
       - name:  ubuntu
         image:  ubuntu:latest
+        command: ["/bin/bash", "-c", "--"]
+        args: ["while true; do sleep 30; done;"]
         resources:
           requests:
             cpu: 100m
@@ -44,4 +46,4 @@ spec:
         - name: localtime
           hostPath:
             path: /usr/share/zoneinfo/Asia/Shanghai
-      restartPolicy: Never 
+      restartPolicy: Always 
