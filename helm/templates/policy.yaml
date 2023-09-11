@@ -15,9 +15,9 @@ spec:
   podSelector: {}
   ingress:
     - from:
-      - namespaceSelector:
+      - podSelector:
           matchLabels:
-            kubernetes.io/metadata.name: sample
+            deployment: default
       ports:
       - protocol: TCP
         port: 80
